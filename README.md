@@ -38,8 +38,3 @@ You can throw a ton of books / albums in the `audio/` folder to run them all at 
 You can leave your files/collections in the `audio/` folder and the script is smart enough not to run them again if they exist in the `wav/` folder.
 
 **Note:** I wrote and tested this on a MacBook Pro, so I can’t guarantee it works on other setups.
-
-Important Settings
-
-- Concat Mode: Set concatMode in the script to 1 if you want to concatenate files by folder. By default, this is enabled.
-- Concurrency: The script automatically detects and uses all your CPU cores for maximum speed!
