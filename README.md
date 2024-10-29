@@ -17,16 +17,27 @@ This script was created to quickly convert audiobooks into `.wav` files, specifi
 ## Usage
 
 1.	Clone or download this repo on your device.
-2.	Place all your audiobook files (in .mp3 or .m4v format) in the audio/ folder.
+2.	Place all your audiobook files (in .mp3 or .m4v format) in the empty `audio/` folder.
 3.	Run the script by executing:
 
 ```bash
 node script.js
 ```
+Run the above if you want individual .wav files just like the original structure - for example if you have .mp3 files for every chapter of a book.
 
-The converted .wav files will appear in the wav/ folder. If you use the --concat option, it’ll also combine files into single .wav files per folder.
+```bash
+node script.js --concat
+```
 
-Note: I wrote and tested this on a MacBook Pro, so I can’t guarantee it works on other setups.
+Run the above if you want to create a single merged .wav file for each book no matter how many audio files its split up in to.
+
+In both cases the converted .wav files will appear in the `wav/` folder.
+
+You can throw a ton of books / albums in the `audio/` folder to run them all at once. The folder structure will be kept.
+
+You can leave your files/collections in the `audio/` folder and the script is smart enough not to run them again if they exist in the `wav/` folder.
+
+**Note:** I wrote and tested this on a MacBook Pro, so I can’t guarantee it works on other setups.
 
 Important Settings
 

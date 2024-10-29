@@ -6,8 +6,7 @@ const os = require('os');
 
 const inputRoot = './audio'; // Root folder for input files
 const outputRoot = './wav'; // Root folder for WAV files
-//const concatMode = argv.concat; // Set to true if `--concat` flag is used
-const concatMode = 1;
+const concatMode = argv.concat; // Set to true if `--concat` flag is used
 
 const numCPUs = os.cpus().length;
 
